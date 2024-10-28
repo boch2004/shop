@@ -1,0 +1,17 @@
+<ul class="jvbvX2Y"><li class="CDnbQF2"><img src="https://images.asos-media.com/navigation/visa-png" alt="VISA"></li><li class="CDnbQF2"><img src="https://images.asos-media.com/navigation/mastercard-png" alt="Mastercard"></li><li class="CDnbQF2"><img src="https://images.asos-media.com/navigation/pay-pal-png" alt="PayPal"></li><li class="CDnbQF2"><img src="https://images.asos-media.com/navigation/american-express-png" alt="American Express"></li><li class="CDnbQF2"><img src="https://images.asos-media.com/navigation/visa-electron-png" alt="VISA Electron"></li></ul>
+
+
+
+<hr>
+
+border color
+
+
+6256CA
+
+
+
+home
+about us
+shop
+contact

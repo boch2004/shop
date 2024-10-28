@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAulBMVEX///8AAAC2Ehn6+vrs7Ozz8/Pl5eXw8PDo6Oj39/fU1NTMzMzGxsbZ2dnBwcG+vr5OTk6jo6OTk5OEhIRUVFRnZ2eLi4vf399aWlqdnZ2urq4qKio2NjYNDQ1vb299fX09PT0bGxuuAAAjIyNGRkajAACqDhS2Eh+2AAjv4eHo1NTlx8fgvsDHeneyNzmpAAm3SUzPj5C9bG3Qm56wKC25RUWvGyPWrbHIhYzEY2rEe4OwTVHDjY3LhYKZxSS3AAAKlElEQVR4nO2b6WLbNhKACYP3fd8iRVFx7NhN0rRdd3fb93+txQAECcpOYseyzXTx/aJIiJrBDAYDYKQoEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSJ6BmllPaW512ktJcgZ6FKqPb60eUfVysjwbhFD56M42SoTal5TmeRREGZTjxzW2emhtvKxEzyAA8cb6UW1xtYPW7guL9ONEIB46Oo9p67e0cfTSMv0wTBmUmd9vqpdo48pUTEAUfzdAW7zpdsMZl3DwvtfSG9HWLTO5GTHNdyIaTnjLx0WLtyDgIpbMz6z7OrE71pG39F9VwKfgnVgmuBfXPOaAOOctn5AwvDIWN8wkohecpANqNI0mYwpmu0fOsG8BmztSffpoJPb6ud1xS6gZbRq+pnRPpAMB94tzJetIgON+vi6obZLXk+3J1ES+RghQ9X5lGlt85oIZg9eS7AeATDMRZkz9mAkjXC2PxfKJBoHtjn9Cg/ar1LFG2ZwXaxmKxWckOzu+llw/RIXSQvxsuWE6DaGi6/xVwu+FG57/AbVpT+YWw5tcySgsZZWzue24aS+DMd4k8TLqo1bwrLxdLGHHeducBO7toQWRLcTjGu0n39IHMUW23Mh/0ubHFsAjaunyxmxQc+/h68vzJNSTRb0/TDMjyZOHYv1M37qb+clKG3yccmgLJvx01dTMtpv/M2zUBbY+K+TBNJ+Sj1pKLtrZNIZu1yV61GbBGwI5wD7rozqwQSMjRYubsT011Q7qqM9AS/3b73pzyDhnjGkfFTQE11RmPaIh26u64zA1aTc+zZD8ixigT1vYFNulkaZYfEmDDUvRopAqesx60q7b7g4gQyPulHmqXvgxcaShW80lRkaM0sZuoate9phNnDcGRzyxx2ZMzJMJcwkmZhlik94JNr3+ZxgknJHwNQ2GeoSNsVkdkvO30wIGAsPo4W37ma/T9TCfQCJim3kbwBD2ocF+vaFv2zZ+oPgQp6agizvBmcgylK+aix3dM6+3PdE4naLBUDm6nm7qquI3swJKh1oHq+S2F8AkkxtKtu18xmt0xcxB1l1Yll1kp8sGzB6FdtWVJY3OTaIrRVN8611vjjHkJDz7cV8e2wYstEcj5o9QuyfhrNmHZZ8HhoKTYctHmmSQpA3EK6wWtuMGddU1c9LikaHUV3XgOHahgoLBWG57DYCr1Y4GNu065MqEga0K0rt7VG1bGZhm2mgloz59slZppVWRgfXdk483xiDBeAhrrHhx/FDgxW7tmyRHg2yz3/aQITh0P3wYYCbJ70lrJOwpzZq3HZgBfsA3hOE4nSVjQ9eN6ZADjeFxNx2abXzEACo934dk025p9uKnxBBjSZ2Obj6zM6lk66sZikonTXJRZJDK4JqaIqVO5fewVQOr0fxn0MUgIcpNuo5cFgHLis24HSc7GC4ok/UQHPTNj3/FqGG1jDVT3PD3a0Fw1YAgbdanx2pbRO/KuKri7qtHL25PnyePKH14e0x6+vr16iZ2nhn/DGOGYJHkuPpGv5t9GttbX/8vWNo35xDN+HlUkfyfcc7sxzIMTRgKmkoB57fY5Sp8Gdcfbm5uPlzPN7FBmpimqa7uwI37A8i4Hz0sPXDPN9D0uk6SPAp8j03rdUeBVNLN4CoLFk2vb3/5+I7w6fOvN9PeGI67LCvLrMtr16MK2UkHN0g6EDj6qtvt3l+rozvV8YxLOTLT2THditj3PsgSLSVW9km1lXX75d3h6gK4Olz+/YHdTdHMMYdetufSJjRmlbhQIwuFrl7Wck6U7dD5qrmsqG3Ir3n5MNeT2PRyR+d5JhHfIDN++31ShXL445Z2aYUEmthUcCbeSWuh450R7bKIJ0T9SWc9DzXZoT10nQb1JIhW8xi0lm+kyrAFyrT21377l6DKxfuLq493cN/eibLvSOaZizfQKBQFOPRgpIwd1g27MypDVygDPSrGRJuWrRCpz7VUA9bFbJWM7y6v3l+suPp4Aw+Gley7SAnG1Z2lgGiu4AyptR36zeE8dTasB6cisoxXIlHjh1SxSlDmw+9Xa1WIbQ5frsmTrt+3Vd1zA2W63iWoCarZ2+YSp2JMp/FEqwjwuNb1OfCq3Zx9QlOgoRGgpH5N1/3MYNafh4v7HMDRsNU0tYJxzV43uPCyPVawOlVs8qIhHKE4Zzr31M+oE6Rn2TIwuqnnIvZLXMd5+LAKwCONR9eXp4ahjvbva9aM9rTKXhfAArqh/R0NS8+QN+9Q5bHgV9KYFlNVz7OXG3HPiIRpC3uLMrQCkIly95BhLq4uYdQUpKfpG2quTI4GNqxLQRmo3YoVZi1Wve4wtzyLMho3jbgIcaiGae3ahW5CA1pnjv9zeP+QNoc7TGViElGjgk06fsqRCD1j7uCIyqElktOBDvW4M51MeSHXpp+7Z4mrY5vR0oXA9nT1vw95GVHmV4sahPW0y0Un7y3p26A3dlNpDThVxUMkqyOiRyDnSgCcPZc8m2IKFiZ0TpgExcevKPOXRuMf9SparQFBHZPphG5F2+3iR+qODU93XCJAP6t1Fm348T7as3DPvEAkg5zL+pYyR9blOhi1dImU5siUcqBnek9RTb2gT1HiuAH9ybCKKpvutJ3xXwOLbVjRaLzM52MW18cp1lmfv6aMxTw/9yJil5SlKjAbDpUH+2xdoCoeTUUH+iPH/Z5eoB1kafp5lRHSQtAGTzGh7SLXMy2tn7INEgAeVoYEABrA2zTsIp4k19AjbVnmtQ1j3547TICOUuKPw1mrhuw5CrQ+eNmuPKIhYuX+uOKp08Oh+QJCM/0TVxsYy6KImjcrjOk/A2YnarFPfPjc0Tk6Q835qobtlTad4Va2SqZyfqwPTs2UeXjSPMCkCcfQ6wyLCl/Ok6G1RMgyKIiGJuhEJ/76pCr3Ofg0h5m1YRkZmTfmfMke2GJAsf5+yDQ0nWEZnLjESic7c2quC1cZbtBLm//m84mmJJBHgakzzeUX9LCZeu5+onnBE036XbG4jnXOkvr7abNWRiXqVpA0qGN6nmM2DWaxnZBDcefS2rmI2ejnQvm7y08nulx9vIUHqdgRQMH6Jl9+iue08wAJdiw908rsPDugAQuWIKwF0/KR/5LVlzwhwNGsjPYXWdCIOc3V73RxpjDRhfpfl81V3SJmvIQYBllAj2ASHGfn2WY32JzSwq59PaBuXlfgqJzlqMPZDWDZLPrYH3d0mGhsVZIvWxU1dap0OSHwSh7J5tHuHNmgCbqz6EKkq9gSOXEUf4yF5NVZ/pftChm6dvvlku0CXB3evf/lht0liT1qckdIvCti8jBaxgKe0/Plr54k6OfwFXv5s8ozsdyEDZa+FLcdyJQ9X9q5mKHDVtOnw+Hd5ec/b695Y0hSVr7So33kCe/T5zWnELqK9Ajm1884ZxpekPR9Uvmr1LVYkj89WA9Q4/rmFjYBl9hl9/ZJEh9Hxep1lue4UdLt+eTCqHfgmNZ5T3M0TTvd21eXKcI4lfQe1r0GxgNJPdYMVffEl+HwlcqfxZrFFzsId5Kf4Iz90ST/pNMc9Sc4yZVIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEonktfgfEoqeMUEwXcgAAAAASUVORK5CYII=" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+<body>
+    <div class="titel">
+    <div class="search">
+        <img src="data:image/png;base64,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" alt="">
+    <!-- <input type="text" placeholder="Search..">
+    <button type="submit"><i class="fa fa-search"></i></button> -->
+    </div>
+    <div class="icon">
+    <a href="">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+    </svg></a>
+    <a href="">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+    </svg></a>  
+    <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+        </svg></a> 
+    </div>  
+    </div>
+    <!-- section 2 -->
+    <section class="sec2">
+        <div>
+            <a href="">home</a>
+            <a href="">about us</a>
+            <a href="">shop</a>
+            <a href="">contact</a>
+        </div>
+        <div><h6>T-shirts</h6></div>
+    </section>
+    <section class="tichrt">
+        <div>
+            <img src="img copy/img (1).jpg" alt="">
+            <h3 style="padding: 0 100px;"> Product</h3>
+            <button>Shop Now</button>
+        </div>
+        <div>
+            <img src="img copy/img (2).jpg" alt="">
+            <h3 style="padding: 0 100px;"> Product</h3>
+            <button>Shop Now</button>
+        </div>
+        <div>
+            <img src="img copy/img (3).jpg" alt="">
+            <h3 style="padding: 0 100px;"> Product</h3>
+            <button>Shop Now</button>
+        </div>
+        <div>
+            <img src="img copy/img (4).jpg" alt="">
+            <h3 style="padding: 0 100px;"> Product</h3>
+            <button>Shop Now</button>
+        </div>
+        <div>
+            <img src="img copy/img (5).jpg" alt="">
+            <h3 style="padding: 0 100px;"> Product</h3>
+            <button>Shop Now</button>
+        </div>
+        <div>
+            <img src="img copy/img (6).jpg" alt="">
+            <h3 style="padding: 0 100px;"> Product</h3>
+            <button>Shop Now</button>
+        </div>
+        <div>
+            <img src="img copy/img (7).jpg" alt="">
+            <h3 style="padding: 0 100px;"> Product</h3>
+            <button>Shop Now</button>
+        </div>
+        <div>
+            <img src="img copy/img (8).jpg" alt="">
+            <h3 style="padding: 0 100px;"> Product</h3>
+            <button>Shop Now</button>
+        </div>
+        <div>
+            <img src="img copy/img (14).jpg" alt="">
+            <h3 style="padding: 0 100px;"> Product</h3>
+            <button>Shop Now</button>
+        </div>
+        <div>
+            <img src="img copy/img (10).jpg" alt="">
+            <h3 style="padding: 0 100px;"> Product</h3>
+            <button>Shop Now</button>
+        </div>
+        <div>
+            <img src="img copy/img (11).jpg" alt="">
+            <h3 style="padding: 0 100px;"> Product</h3>
+            <button>Shop Now</button>
+        </div>
+        <div>
+            <img src="img copy/img (12).jpg" alt="">
+            <h3 style="padding: 0 100px;"> Product</h3>
+            <button>Shop Now</button>
+        </div>
+    </section>
+</body>
+<!-- footer -->
+<footer>
+    <!-- <div>
+    <ul class="jvbvX2Y"><li class="CDnbQF2"><img src="https://images.asos-media.com/navigation/visa-png" alt="VISA"></li><li class="CDnbQF2"><img src="https://images.asos-media.com/navigation/mastercard-png" alt="Mastercard"></li><li class="CDnbQF2"><img src="https://images.asos-media.com/navigation/pay-pal-png" alt="PayPal"></li><li class="CDnbQF2"><img src="https://images.asos-media.com/navigation/american-express-png" alt="American Express"></li><li class="CDnbQF2"><img src="https://images.asos-media.com/navigation/visa-electron-png" alt="VISA Electron"></li></ul>
+    </div> -->
+
+    <ul>
+        <li><i class="fa fa-envelope" style="font-size:24px ; color:red "></i>********************</li>
+        <li><i class="fa fa-phone" style="font-size:24px ; color:red ; padding-right: 4px; "></i>********************</li>
+        <li><i class="fa fa-map-marker" style="font-size:24px ; color:red ; padding-right: 10px;"></i>*******************</li>
+    </ul>
+    <ul>
+        <h3>Liens utiles</h3>
+        <li>Services</li>
+        <li>Nous contacter</li>
+        <li>Magasins Exist</li>
+        <li>Blog</li>
+    </ul>
+    <ul>
+        <h3>Informations</h3>
+        <li>Présentation</li>
+        <li>Connexion</li>
+        <li>Mon compte</li>
+    </ul>
+    <ul>
+        <h3>Produits</h3>
+        <li>Promotions</li>
+        <li>Nouveaux produits</li>
+        <li>Meilleures ventes</li>
+    </ul>
+
+
+</footer>
+</html>
